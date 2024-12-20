@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Shoe List </title>
+    </head>
+    <body>
+        <table style="border: 1px solid black">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Brand</td>
+                <td>size</td>
+                <td>type</td>
+                <td>price</td>
+                <td>status</td>
+                <td colspan="2">action<td>
+            </tr>
+            {% for i in sList %}
+            <tr>
+                <td>{{i.sId}}</td>
+                <td>{{i.sName}}</td>
+                <td>{{i.sbrand}}</td>
+                <td>{{i.size}}</td>
+                <td>{{i.stype}}</td>
+                <td>{{i.price}}</td>
+                <td>{{i.status}}</td>
+                <td><a href="edit/{{i.sId}}">edit</a></td>
+                <td><a href="delete/{{i.sId}}">delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

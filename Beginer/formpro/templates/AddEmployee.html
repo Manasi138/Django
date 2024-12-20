@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        Registration Form
+        <form action="{% url "s" %}" method="post">
+            {% csrf_token %}
+            Id : <input type="text" name="eId"><br>
+            Name : <input type="text" name="fname"><br>
+            Email : <input type="email" name="email"><br>
+            Password : <input type="text" name="password"><br>
+            Address : <input type="text" name="address"><br>
+            Contact No : <input type="text" name="contact"><br>
+            <input type="submit" value="addemployee"><br>
+        </form>
+    </body>
+</html>        

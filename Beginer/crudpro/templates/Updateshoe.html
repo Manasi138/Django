@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Update Shoe</title>
+    </head>
+    <body>
+        <h1>Update Shoe</h1>
+        <form method="post" action="{% url "update_shoe" %}">
+            {% csrf_token %}
+            <label for="sId">ID:</label>
+            <input type="text" name="sId" value="{{shoe.sId}}"><br>
+
+            <label for="sName">Shoe Name:</label>
+            <input type="text" name="sName" value="{{shoe.sName}}"><br>
+
+            <label for="sbrand">Brand:</label>
+            <input type="text" name="sbrand" value="{{shoe.sbrand}}"><br>
+
+            <label for="size">Size:</label>
+            <input type="text" name="size" value="{{shoe.size}}"><br>
+
+            <label for="stype">Type:</label>
+            <input type="text" name="stype" value="{{shoe.stype}}"><br>
+
+            <label for="price">Price:</label>
+            <input type="text" name="price" value="{{shoe.price}}"><br>
+
+            <label for="status">Status:</label>
+            <select name="status">
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Girls">Girls</option>
+                <option value="Boys">Boys</option>
+            </select><br>
+
+            <input type="submit" value="Update Shoe">
+    </body>
+</html> 
