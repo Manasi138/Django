@@ -1,0 +1,1 @@
+# HI THIS is mansis django file
