@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Food Details </title>
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            <table border="1">
+                <caption>Update Food</caption>
+                <tr>
+                    <td>FoodId : </td>
+                    <td><input type="text" name="foodId" value="{{food.foodId}}"></td>
+                </tr>
+
+                <tr>
+                    <td>FoodName : </td>
+                    <td><input type="text" name="foodName" value="{{food.foodName}}"></td>
+                </tr>
+
+                <tr>
+                    <td>FoodType : </td>
+                    <td><input type="text" name="foodType" value="{{food.foodType}}"></td>
+                </tr>
+
+                <tr>
+                    <td>FoodCategory : </td>
+                    <td><input type="text" name="foodCategory" value="{{food.foodCategory}}"></td>
+                </tr>
+
+                <tr>
+                    <td>FoodPrice : </td>
+                    <td><input type="text" name="foodPrice" value="{{food.foodPrice}}"></td>
+                </tr>
+
+    </body>
+</html>

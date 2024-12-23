@@ -1,0 +1,14 @@
+<html>
+    {% load static %}
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="{% url "addfood" %}" method="post">
+            {% csrf_token %}
+            {{form.as_p}} <!--form.as_p is a method used to render a django form field as a html <p> tag elements with each field and its associator label wrapped in a <p> tag, it provides a simple way to format the forms in your templates-->
+            <input type="submit" value="addfood">
+        </form>
+    </body>
+
+</html>

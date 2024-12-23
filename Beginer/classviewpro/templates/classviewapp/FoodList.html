@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Food List</title>
+    </head>
+    <body>
+    
+        <table style="border: 1px solid black">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>type</td>
+                <td>price</td>
+                <td>Category</td>
+                <td colspan="2">action<td>
+            </tr>
+            {% for i in foods %}
+            <tr>
+                <td>{{i.foodId}}</td>
+                <td>{{i.foodName}}</td>
+                <td>{{i.foodType}}</td>
+                <td>{{i.foodCategory}}</td>
+                <td>{{i.foodPrice}}</td>
+                <td><a href="edit/{{i.foodId}}">edit</a></td>
+                <td><a href="delete/{{i.foodId}}">delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+
