@@ -1,1 +1,1 @@
-# HI This is Manasi's django file
+# Hi This is Manasi's django file
